@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog of Volodymyr Lyubinets</title>
+    <description>Blog of Volodymyr Lyubinets</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 14 Nov 2017 13:24:24 +0100</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2017 13:24:24 +0100</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Doing well on hackathons: LauzHack case study</title>
+        <description>&lt;p&gt;This is a quick post about various hackathon tips that can be helpful for people doing hackathons for the first time, and how these tips applied to us at &lt;a href=&quot;http://lauzhack.com/&quot;&gt;LauzHack 2.0&lt;/a&gt;. I’ve done a couple (5 to be precise) of hackathons, and while I didn’t get anything at the first two, I got some prizes at each of the last three.&lt;/p&gt;
+
+&lt;p&gt;So just in case you don’t know, &lt;a href=&quot;https://en.wikipedia.org/wiki/Hackathon&quot;&gt;Hackathon&lt;/a&gt; is programming event/competition where you engineer something under time constraints (typically 1 day) and demo it afterwards for a chance to win some prizes. We’ll define “doing well” as building something interesting, learning something new and getting some prizes.&lt;/p&gt;
+
+&lt;p&gt;Last weekend I participated in &lt;a href=&quot;http://lauzhack.com/&quot;&gt;LauzHack 2.0&lt;/a&gt; hackathon in a team of 3 and we ended up doing pretty well there - we got a runner-up spot overall plus a Logitech prize. We’ve built a system that allows to manipulate your computer using gestures captured by a web camera, see &lt;a href=&quot;https://devpost.com/software/iron-man-manipulator&quot;&gt;Iron Man Manipulator&lt;/a&gt; for a longer description. It had a couple of extra features for a nice demo and was built using python+OpenCV.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/maksay/lauzhack/raw/master/maksai.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Andrii using our project&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s begin with my hackathon tips.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;#1&lt;/strong&gt;: the first step to doing well is getting a good team. A “good team” doesn’t mean that there has to be &lt;a href=&quot;https://research.google.com/pubs/jeff.html&quot;&gt;Jeff Dean&lt;/a&gt; in it, but rather that you are comfortable working with each other. For some projects it’s a good bonus if you have a diverse set of skills (e.g. a front-end person and a back-end person), or if you have overlaps in some areas and can help each other with the difficulties. The latter is pretty important - your problem is entire teams problem, so you should be collaborative in solving issues. Because of all this I think that it’s better to make a team with your friends. However, at LauzHack 2.0 we ended up going to a competition as a team of 2, so Andrii (my teammate) decided to look for an extra person. We found Mihail - a Moldovian guy studying in Germany, who, just like me and Andrii, is a competitive programmer. We ended up collaborating quite well, with each of us writing a significant portion of the code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;#2&lt;/strong&gt;: pick a good idea. This depends on a type of hackathon you’re attending - sometimes you’re asked to build something that can become a startup (so you have to think about the business side of the pitch), or focus on technology with no powerpoint crap, which was the case at LauzHack. Typically a good idea involves:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;using a trendy method or device (e.g. VR, machine learning or Alexa)&lt;/li&gt;
+  &lt;li&gt;having a good demo potential (saying that your music recommender app only works for 1000+ users is VERY bad)&lt;/li&gt;
+  &lt;li&gt;having a simple practical use-case. Last year winnner is a great example of this - they build a mobile app for tracking washing labels once you cut them off, uing computer vision usage to read label info.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You don’t have to be perfect at all 3 - for example our solution lacked a practical use-case (but made up for it with technical complexity and a nice demo). Or there was a simple social-media blocker app, which had a practical use-case and a nice UI. I would also mention that novelty is often overrated - truly new ideas are VERY rare. So it’s OK to build yet another voice assistant, but ideally it should have some distinctive feature that well-known ones don’t have (e.g. setting humor level like TARS in “Interstellar”).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;#3&lt;/strong&gt;: Come up with a tentative plan and check-up on the actual progress every hour or so. A rule of thumb for new engineers is to multiply their estimate of feature completion time by 2. For hackathons, you should also divide the number of planned features by 2 :) Account for extra time when dealing with new technologies - your first step should be to get some simple examples working on your machine. Definitely start from the most important features and if there are multiple parts of technology stack, try to parallelize the work (don’t spend first 1/2 of time on frontend only to discover that you can’t finish backend in time). You should be code complete ~2 hours before the deadline and save that time for polishing (~1 hour will go into pitch preparation). Don’t make major changes in the last minutes - in 99% of cases that’s a bad decision!&lt;/p&gt;
+
+&lt;p&gt;Quick anecdote from LauzHack: none of us had extensive experience with OpenCV (although we had some), so the first thing we did is got simple examples working. Took us a bit of time to get it working on Mihail’s ubuntu, where pip opencv package missed camera support (me and Andrii use OS X). Afterwards, we discovered a funny bug, where the camera video feed stops after 100 seconds. There is a 2 year github thread with dozens of people confirming this bug, with the only fix being “go to this C++ file, change this line of code and recompile OpenCV”. Nobody ever merged this fix into a new OpenCV version. So we just made sure that our demos are less than 100 seconds - nobody wanted to mess with OpenCV source code. As a young student I thought that top-notch open source projects are made by really smart people, but after seeing various open-source code during industry work, and writing some myself, I can safely say that it’s often quite bad :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;#4&lt;/strong&gt;: Write the code “smartly”. The core part of the hackathon is spent writing code, so it helps if you can do that well :) There are several tips related to writing hackathon code versus industry or homeworks. First of all, nobody is going to read your code, so as long as you can understand it, you can do whatever you want - use global variables, have &lt;a href=&quot;https://en.wikipedia.org/wiki/Spaghetti_code&quot;&gt;spaghetti code&lt;/a&gt; and other things that are unacceptable by the sane people. Second, it is OK to use “dirty” workarounds - for example I couldn’t figure out how to pass input to a lua tool called Hammerspoon programmatically, so I just made it read the input from a text file each 0.1 second, while my program was updating contents of that file. This is bad engineering, but works flawlessly for a hackathon. Lastly, one programming principle you should &lt;strong&gt;*not*&lt;/strong&gt; ignore is modularity. You are writing this project as a team, so it helps a lot for you to define APIs beforehand, and then for each team member to implement her/his part. For example, in our project Andrii wrote a function that computed hand location, with me and Mihail using it to update slider and button values. As a result, we had no issues with merging our code or compatibility between different parts of code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;#5&lt;/strong&gt;: Spend the last hour polishing your demo and pitch. While you can create the best project ever, if you cannot showcase it well, you won’t get the prizes. Thus, prepare a demo and practice your pitch in front of your teammates. It helps to have a memorable pitch - one that produces “wow!” effect or makes your audience laugh (this is true for most presentations). I probably did a mediocre job with pitching our project, but still, I’m much better at that than I once was. I’ll attribute this to the fact that Eastern European high schools place 0 emphasis on learning how to present/speak well, unlike their North American counterparts. Luckily, public speaking, like many other things, can be learned.&lt;/p&gt;
+
+&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;So that’s about it. Follow these 5 tips and you have a decent chance to build something cool and get some prizes. It’s worth mentioning that out of 5 hackathons I’ve been to, LauzHack had the best prizes and swag - kudos to the organizers and sponsors!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/prizes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;^ Prizes each of us got.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/our-story-from-lauzhack/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/our-story-from-lauzhack/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Google Hash Code and deadline24: my experience</title>
+        <description>&lt;p&gt;Since I’m in Europe now, I got a chance to participate in two programming competitions that have onsite finals (as flying to Europe from North America to participate doesn’t make much sense). Both of these aren’t hackathons or ICPC-style competitions, instead they focus on optimization problems or games. I haven’t done competitions like this before, so it was an interesting experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;google-hash-code&quot;&gt;Google Hash Code&lt;/h2&gt;
+
+&lt;p&gt;In Google Hash Code you are given one problem for a team of four. The problem has 3 or 4 test cases, which might allow some parallelization of work, but it’s usually the case that one participant ends up writing most of the code. You have to process the input on your own machine and submit the output, so that allows you use any technologies of your choice and gives you a bit more lenience with program runtimes - it’s OK if the program runs for a minute or two, and you don’t have to bother with shaving off an extra log(n) factor.
+I didn’t have a team until a week or so before the competition, but luckily a friend of mine was looking for a 4th member, so I joined their team. In the qualification round (see problem statements here), you had to distribute videos among the set of the cache servers so that viewers would get the fastest download rates (you have download speeds for each cache server). Each server had a limited amount of memory, so you couldn’t just stick each video everywhere. Searching for the best possible solution will take an exponential amount of time, and it’s likely that there aren’t any shortcuts. So you just had to find a solution which was good enough. It’s quite often that in these competitions you’ll just get some NP-hard problem and look for ways to solve it quickly with minimal damage to accuracy. For this problem a pretty obvious approach comes to mind - at each step try all possible pairs of videos and cache servers, and choose the one that brings down the current latency the most. This greedy algorithm turned out to produce pretty good results with almost all winning teams using a variation of it. The first straightforward implementation that I wrote was a bit too dumb and was too slow to process two of the test cases, so I had to rewrite it to avoid recomputing all pairs at each step. Once we added a couple of heuristics to the solution, we made our final submissions minutes minutes before the end. Since the scoreboard was frozen, and we weren’t in top 50 before the freeze, it was unclear if we would make it to the finals. Luckily, we ended up placing 46-th (out of 2815), which meant we were going to Paris (top 50 teams)!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493244624938_coding.JPG&quot; alt=&quot;At the finals&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The final problem was about placing a set of wifi routers to maximize coverage in a building. It was a nice problem, but perhaps the organizers picked a problem that was a bit too simple - top 47 had scores within 3% of each other. Nevertheless, the first two spots were taken by the folks who would later take top 2 spots of dealdine24, so even this tight contest had a room to stand out. Just like in the qualification, after nailing the core part of solution, we found a way for slight improvements with misc heuristics (this time I didn’t write much code). In the end, we performed quite well, placing 9-th. Even though Hash Code finals had teams from 25 countries, Eastern Europe was on top as usual (this was Europe, Africa and ME - so China couldn’t participate) - the top 10 had 5 teams from Russia, 2 from Ukraine and 1 from Georgia. Both Ukrainian teams were from Lviv :).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493244394967_Screen+Shot+2017-04-02+at+11.42.53+PM.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Not much value in a piece of paper that says you’re 9th … gotta do better next time&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Traveling to onsite rounds gives you a chance to visit new cities (technically it’s very easy to do so in 21st century, but, you know, laziness kicks in). Unfortunately, I had to head back to Amsterdam in the evening, so I had to choose between Eiffel Tower and Notre Dame De Paris, and I chose the latter. It was a good choice - that’s a nice part of town to walk around! So all-in-all, it was an enjoyable trip. See pictures at the bottom of this post.&lt;/p&gt;
+
+&lt;h2 id=&quot;deadline24&quot;&gt;deadline24&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493248827789_IMG_0728.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The contest was long, so in case it gets cold …&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Unlike Hash Code, deadline24 has several problems in each round, so this time each participant had to do his/her share. In the qualification round I only worked on one problem, which was basically playing Scrabble by yourself to maximize the score. My algo was to chose the best word at each step greedily - a simple greedy strategy is often a good first step. There were a couple of nice data structures used, such as a trie for fast dictionary lookup - regular ACM stuff helps in these competitions as well. We did a good job on that round, placing 12th, mostly thanks to &lt;a href=&quot;https://www.topcoder.com/members/Deretin/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;Roman&lt;/a&gt; solving all three ACM-style problems quickly.
+The final round had a really interesting setup. First of all, it’s a 24 hour competition, so there was a lot of coffee and Red Bull involved (a bit of sleep as well). In this competition, you had to write programs to compete against other teams. An interesting part of the setup is that the location had no internet access, and the contest was conducted over local network with your program communicating with the game server over tcp/ip. This meant that unlike in Hash Code, you couldn’t google anything useful (although that rarely helps). To make sure that there’s enough stuff to do during these 24 hours, each problem has a really complicated statement with tons of inputs (nearly 15 pages long) - that’s quite annoying at first, but then you get used to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493247264393_teammates.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;My teammates looking at visualization that Taras (on the right) was working on. He did a pretty poor job …&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My problem was a parody on Elon Musk - you had to manage a car park to make money that will allow you to launch a rocket. There were lots of other small aspects, but the core part was making money with cars, and for some weird reason you got money for making long cycles that visit unique edges only. There were a couple of other caveats here, like picking up the biggest bonus from visiting a city, and making sure you have enough fuel to pass through edges (which depends on traffic from other teams). Mostly, it was about finding long cycles with good conditions. My first approach of DFS-ing with cutoffs was really bad - I couldn’t process depth larger than 10 within a second (which was the time you got per 1 turn). My second (and final) approach was to run Dijkstra from the start point and then run another Dijkstra from each city that was within CURRENT_FUEL / 2 from start to get route from that city back to start. In the second Dijkstra we exclude edges used in the first run - that way the combined result has only unique edges. Since city graph was fairly small (less than 10k vertices) and a lot of cities were cut out by fuel criteria, this usually took under 0.2 seconds, which was excellent. I made some tweaks later, but this was the core of the solution. Unfortunately, the scoring for this problem was heavily biased to launching a rocket (step 2), which typically only the team with most money could do.
+Unfortunately, that was not me 😞 I blew off my only chance to launch a rocket by having a bug in my solution - but that was the code written at hour 16, right before I went to sleep. Nevertheless, I finished 5th among the teams on my problem, although that might have been a consequence of other teams abandoning this problem, as it was hard to steal points from the top team (&lt;a href=&quot;https://www.topcoder.com/members/tourist/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;tourist&lt;/a&gt; and co). My performance could have been better though - I missed a stupid errata sheet that had corrections to scoring coefficients - the math I’ve been using to count points and fuel was wrong (I wonder how the f did my solution do so well despite this)! The contest was a total disaster for our team - we ended up 25th, way below our expectations. However, the contest organization and problems were really good, so I still enjoyed the competition!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493248993748_location.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;deadling24 venue - used to be a coal mine here&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;deadline24 was held in Katowice (Poland), in a building that used to be a coal mine (or a storage for it) - teams were located on floor -4 (under the ground). Now there’s a museum there. After the contest we went to an escape room, which was in Polish and conducted by a guy who didn’t speak English. Luckily, I can make up Polish phrases by throwing in more consonants into Ukrainian 😃 After all, I also have a couple of “How to curse in Polish” lessons from youtube under my belt 😃 That would be helpful for describing our performance…&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Well, competitions like this are really interesting. There’s a much wider room for creativity than in ACM-style contests, with whole families of algorithms such as hill climbing being useful - they rarely come up in ACM.
+Personally, I think the basic strategy for these contests is:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Figure out the core part of your approach (e.g. use of Dijkstra over DFS with cutoffs)&lt;/li&gt;
+  &lt;li&gt;Extend it with various heuristics, etc. (e.g. incorporating new variables into Dijkstra scoring function).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, it was very fun! Unlike Hash Code, deadline24 teams were mostly current/former AMC-ers. There was even a googler who flew in to participate from California, as well as a team of South Africans (headed by bmerry). It was quite wide on age spectrum as well - a team that won the 2 previous editions and placed 3rd this time consists of three Polish folks over 30 - all former ACM medalists. Two of them are CS profs at Warsaw University and one of them is a &lt;a href=&quot;https://www.topcoder.com/members/Psyho/&quot;&gt;Psyho&lt;/a&gt; - idk what he does 😃 I wonder if these contests are indeed as fun as programming can get?&lt;/p&gt;
+
+&lt;p&gt;P.S. Pics of Paris:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493244793540_paris1.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Spring was full-force in Paris&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493244793513_paris2.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Notre Dame is much bigger than it looks on the pictures&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493249253831_moulin3.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;We lived in the area where various famous writers and singers used to live&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493249253844_moulin5.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Churches in Paris are HUGE&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493249253768_moulin.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Some sex shops are HUGE too&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_4F2F7ECA1485D646AE2033F2C179B6490D90308A8FC1D102FC37333AC2DE00EF_1493249253790_moulin2.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;HashCode participants represented 25 countries&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jul 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017/deadline-and-hashcode/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/deadline-and-hashcode/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>I finally became red on TopCoder</title>
+        <description>&lt;p&gt;I finally became red on TopCoder!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/red.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;My TC chart&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Apparently not being focused on becoming red and treating TopCoder as a fun way to spend a couple of hours every month helped me a lot - I wasn’t upset about the mistakes that I made anymore, and my performance actually improved (even though I’m not “training”). That was the case with math competitions as well - my two best performances on Putnam were after I spent the previous evening playing videogames.&lt;/p&gt;
+
+&lt;p&gt;For the reference, here’s &lt;a href=&quot;https://www.topcoder.com/members/mzuckerberg/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;Mark Zuckerbergs profile&lt;/a&gt; and &lt;a href=&quot;https://www.topcoder.com/members/dangelo/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;Adam D’Angelos profile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/paper.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;A typical paper that I “produce” during the contest&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;UPD: Lost my red color after I decided to do some rounds for fun after a year without a practice. &lt;a href=&quot;https://www.topcoder.com/members/vlyubin/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;My profile&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 May 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/i-became-red-on-topcoder/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/i-became-red-on-topcoder/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Unlucky 13</title>
+        <description>&lt;p&gt;I posted this on Quora and am too lazy to repost it, so here’s the actual link: &lt;a href=&quot;https://vlyubin.quora.com/Unlucky-13&quot;&gt;https://vlyubin.quora.com/Unlucky-13&lt;/a&gt; :D&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2015/unlucky-13/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/unlucky-13/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+
+# SEO settings
+title: "Blog of Volodymyr Lyubinets"
+description: "Blog of Volodymyr Lyubinets"
+keywords: "Lyubinets, Volodymyr, Blog"
+url: http://vlyubin.github.io
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+repo: http://github.com/vlyubin/vlyubin.github.io
+comments: false
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Volodymyr Lyubinets"
+  job      : "Computer Scientist"
+  thumb    : /me.jpg
+  email    : vlyubin@gmail.com
+  url      : http://vlyubin.github.io
+  github   : http://github.com/vlyubin
+  linkedin : http://linkedin.com/in/lyubinets
+
+# social settings
+og_locale: "en_US"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
