@@ -5,3 +5,6 @@ permalink: /about/
 ---
 
 I write code of dubious quality ...
+
+![](/assets/images/me.jpg)
+*Me*
