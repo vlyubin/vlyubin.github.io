@@ -7,7 +7,7 @@ url: http://vlyubin.github.io
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
-google_analytics: UA-XXXXX-XX
+google_analytics: UA-44268710-5
 repo: http://github.com/vlyubin/vlyubin.github.io
 comments: false
 
