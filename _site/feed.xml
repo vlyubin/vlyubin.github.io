@@ -5,9 +5,20 @@
     <description>Blog of Volodymyr Lyubinets</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Feb 2018 16:02:00 +0200</pubDate>
-    <lastBuildDate>Fri, 02 Feb 2018 16:02:00 +0200</lastBuildDate>
+    <pubDate>Sat, 10 Feb 2018 22:33:47 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Feb 2018 22:33:47 +0200</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Diagram of unhappiness causes</title>
+        <description>&lt;p&gt;In the works …&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Feb 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2018/what-causes-unhappiness/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/what-causes-unhappiness/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Translating (a tiny part of) &quot;Les Misérables&quot; into Ukrainian</title>
@@ -44,6 +55,60 @@
         <pubDate>Fri, 02 Feb 2018 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2018/translating-les-mis/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/translating-les-mis/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Writing broken poetry in Ukrainian</title>
+        <description>&lt;p&gt;I’ve been reading some &lt;a href=&quot;https://en.wikipedia.org/wiki/Serhiy_Zhadan&quot;&gt;Zhadan’s&lt;/a&gt; poetry recently and decided to give writing poems a try. I’ve never written any, so it’s obviously going to be crappy, but one has to start from somewhere, you know :) Still, I find picking words to get the rhyme fairly easy, but meaningless words won’t make a good poem - it has to conway some idea. And since I’ve been listening to “Black Sabbath” a lot lately, my subject is going to be death :) So if you understand Ukrainian, here’s some low quality poetry for you:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;З дитинства знає кожен з нас&lt;br /&gt;
+Скінченний на землі оцій наш час&lt;br /&gt;
+Як палко смерті не проси&lt;br /&gt;
+Ніхто не омине її коси&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Тому шукають люди панацеї&lt;br /&gt;
+Як участі уникнути цієї&lt;br /&gt;
+Чи можна якось схитрувать&lt;br /&gt;
+Щоб в домовину не прийшлось лягать&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Володарі земель й маєтків пишних&lt;br /&gt;
+Для жебраків монет вони не мають лишніх&lt;br /&gt;
+Пів-царства можуть вам віддать&lt;br /&gt;
+Лиш би ніколи не вмирать&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Вояки браві спосіб інший мають&lt;br /&gt;
+Не тільки слави у боях вони шукають&lt;br /&gt;
+В походах на Святу Землю&lt;br /&gt;
+Пощаду Божу виборять свою&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Алхіміки темниць глибинних&lt;br /&gt;
+Майстри рідин всіляких плинних&lt;br /&gt;
+Рецепт жадають змайструвать&lt;br /&gt;
+Що існування вічне ладен дарувать&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Проте дарма стараються вони&lt;br /&gt;
+Бо неможливо долі оминуть&lt;br /&gt;
+І бідняки і кати і пани&lt;br /&gt;
+Однаковий кінець усі знайдуть&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Тому що завжди після гри&lt;br /&gt;
+Фігури - великі і малі&lt;br /&gt;
+В одну коробку всі підуть&lt;br /&gt;
+Закінчивши свою коротку путь&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Perhaps this could be used for people learning poetry to see all possible mistakes one can make. For example, the 6th verse has ABAB structure unlike every other verse which has AABB. In the last line of the 4th verse the last word is technically OK for the rhyme, but the word that gets “stressed” there is “Божу”, making the rhyme work poorly. Lastly, verse sizes are completely broken, but Zhadan does it all the time :P I was given some helpful tips on this, but I’m too lazy to go back and fix this particular piece, so I’d rather write something new from scratch. I’ll leave one helpful link for those who want to write some stuff too &lt;a href=&quot;http://www.ukrlitzno.com.ua/teoriya-literaturi-elementi-virshuvannya-sistema-virshuvannya/&quot;&gt;Poem Metre guide in Ukrainian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So now this poorly written poetry is out for the whole Internet to see :)&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jan 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2018/broken-poetry-in-ukrainian/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/broken-poetry-in-ukrainian/</guid>
         
         
       </item>
