@@ -5,20 +5,9 @@
     <description>Blog of Volodymyr Lyubinets</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Feb 2018 22:33:47 +0200</pubDate>
-    <lastBuildDate>Sat, 10 Feb 2018 22:33:47 +0200</lastBuildDate>
+    <pubDate>Mon, 18 Jun 2018 22:03:12 -0600</pubDate>
+    <lastBuildDate>Mon, 18 Jun 2018 22:03:12 -0600</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
-    
-      <item>
-        <title>Diagram of unhappiness causes</title>
-        <description>&lt;p&gt;In the works …&lt;/p&gt;
-</description>
-        <pubDate>Sat, 10 Feb 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/what-causes-unhappiness/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/what-causes-unhappiness/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Translating (a tiny part of) &quot;Les Misérables&quot; into Ukrainian</title>
@@ -52,7 +41,7 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/lesmis.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;Before the show in Queens Theatre (London)&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 02 Feb 2018 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 02 Feb 2018 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2018/translating-les-mis/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/translating-les-mis/</guid>
         
@@ -106,7 +95,7 @@
 
 &lt;p&gt;So now this poorly written poetry is out for the whole Internet to see :)&lt;/p&gt;
 </description>
-        <pubDate>Sat, 20 Jan 2018 00:00:00 +0200</pubDate>
+        <pubDate>Sat, 20 Jan 2018 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2018/broken-poetry-in-ukrainian/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/broken-poetry-in-ukrainian/</guid>
         
@@ -155,7 +144,7 @@
 
 &lt;p&gt;^ Prizes each of us got.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Nov 2017 00:00:00 +0200</pubDate>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2017/our-story-from-lauzhack/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/our-story-from-lauzhack/</guid>
         
@@ -233,7 +222,7 @@ Personally, I think the basic strategy for these contests is:&lt;/p&gt;
 
 &lt;p&gt;That’s it.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 01 Jul 2017 00:00:00 +0300</pubDate>
+        <pubDate>Sat, 01 Jul 2017 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/2017/deadline-and-hashcode/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/deadline-and-hashcode/</guid>
         
@@ -256,7 +245,7 @@ Personally, I think the basic strategy for these contests is:&lt;/p&gt;
 
 &lt;p&gt;UPD: Lost my red color after I decided to do some rounds for fun after a year without a practice. &lt;a href=&quot;https://www.topcoder.com/members/vlyubin/details/?track=DATA_SCIENCE&amp;amp;subTrack=SRM&quot;&gt;My profile&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 12 May 2016 00:00:00 +0300</pubDate>
+        <pubDate>Thu, 12 May 2016 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/2016/i-became-red-on-topcoder/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/i-became-red-on-topcoder/</guid>
         
@@ -270,7 +259,7 @@ Personally, I think the basic strategy for these contests is:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/acm.jpeg&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;UWaterloo ‘15 team&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 02 Jun 2015 00:00:00 +0300</pubDate>
+        <pubDate>Tue, 02 Jun 2015 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/2015/unlucky-13/</link>
         <guid isPermaLink="true">http://localhost:4000/2015/unlucky-13/</guid>
         
