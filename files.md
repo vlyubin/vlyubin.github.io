@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Misc Files
+title: Misc
 permalink: /files/
 ---
+
+Misc files (mostly from presentations):
 
 * Resume: [resume](/assets/resume.pdf)
 
